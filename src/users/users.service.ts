@@ -8,9 +8,14 @@ export class UsersService {
     private readonly users = [
         {
             userId: 1,
-            username: 'john',
-            password: 'changeme',
-          }
+            username: 'John',
+            password: 'password',
+        },
+        {
+            userId: 2,
+            username: 'Maria',
+            password: 'guess',
+        },
     ];
 
     async findOne(username: string): Promise<User | undefined> {
